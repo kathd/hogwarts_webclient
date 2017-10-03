@@ -1,0 +1,6 @@
+<h2><%= @student.full_name %></h2>
+<p><%= @student.original_house %></p>
+
+<%= link_to "Edit", "/api/v1/students/#{params[:id]}/edit" %>
+
+<%= link_to "Delete", "/api/v1/students/#{@student.id}", method: :delete %>

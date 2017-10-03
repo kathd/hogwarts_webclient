@@ -1,0 +1,15 @@
+<h1>Edit Student</h1>
+
+<%= form_tag "/students/#{@student['id']}", method: :patch do %>
+    <%= label_tag :first_name %>
+    <%= text_field_tag :first_name, @student['first_name'] %>
+
+    <%= label_tag :last_name %>
+    <%= text_field_tag :last_name, @student['last_name'] %>
+
+    <%= label_tag :house %>
+    <%= text_field_tag :original_house, @student['original_house'] %>
+
+  <%= submit_tag "Save Changes" %>
+
+<% end %>

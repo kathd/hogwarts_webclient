@@ -1,0 +1,21 @@
+<h1>New Student</h1>
+
+<%= form_tag "/api/v1/students" do %>
+  <div>
+    <%= label_tag :first_name %>
+    <%= text_field_tag :first_name %>
+  </div>
+
+  <div>
+    <%= label_tag :last_name %>
+    <%= text_field_tag :last_name %>
+  </div>
+
+  <div>
+    <%= label_tag :house %>
+    <%= text_field_tag :house %>
+  </div>
+
+  <%= submit_tag "Add Student" %>
+
+<% end %>
